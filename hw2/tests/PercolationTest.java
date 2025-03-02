@@ -1,5 +1,8 @@
 import org.junit.jupiter.api.Test;
 
+import java.io.*;
+import java.util.*;
+
 import static com.google.common.truth.Truth.assertThat;
 import static org.junit.jupiter.api.Assertions.fail;
 
@@ -82,7 +85,15 @@ public class PercolationTest {
     //       write some more tests and delete the fail() line
     @Test
     public void yourFirstTestHere() {
-        fail("Did you write your own tests?");
+        String[] f = getFileName();
+        PercolationPicture.main(f);
+    }
+
+    public String[] getFileName(){
+        System.out.println("Please enter a file name: ");
+        Scanner sc = new Scanner(System.in);
+        String filename = sc.nextLine();
+        return new String[]{filename};
     }
 
 }
