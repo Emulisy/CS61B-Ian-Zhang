@@ -165,7 +165,7 @@ public class Model {
      *    merge (perhaps zero).
      * 3. When three adjacent tiles in the direction of motion have the same
      *    value, then the leading two tiles in the direction of motion merge,
-     *    and the trailing tile does not.
+     *    and the trailing tile does not
      */
     public void moveTileUpAsFarAsPossible(int x, int y) {
         // TODO: Tasks 5, 6, and 10. Fill in this function.
