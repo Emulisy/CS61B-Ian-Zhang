@@ -85,6 +85,7 @@ public class PercolationTest {
     //       write some more tests and delete the fail() line
     @Test
     public void yourFirstTestHere() {
+        //calls percolation picture methods for random test from file in input files
         String[] f = getFileName();
         PercolationPicture.main(f);
     }
