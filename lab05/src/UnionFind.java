@@ -1,4 +1,5 @@
 public class UnionFind {
+    //Union Find ADT
     public int[] numList;
     // TODO - Add instance variables?
 
