@@ -83,9 +83,9 @@ public class PreconditionTest {
                 typeCounts.merge(f.getType(), 1, Integer::sum);
             }
         }
-        assertWithMessage("Node class does not contain exactly two fields of type Node")
+        assertWithMessage("BTree.Node class does not contain exactly two fields of type BTree.Node")
                 .that(typeCounts.get(nodeClass)).isEqualTo(2);
-        assertWithMessage("Node class does not contain exactly one generic value field")
+        assertWithMessage("BTree.Node class does not contain exactly one generic value field")
                 .that(typeCounts.get(Object.class)).isEqualTo(1);
     }
 

@@ -72,8 +72,8 @@ public class ULLMap<K, V>  implements Map61B<K, V> {
     }
 
     /**
-     * Keys and values are stored in a linked list of Node objects.
-     * This variable stores the first Node in this linked list.
+     * Keys and values are stored in a linked list of BTree.Node objects.
+     * This variable stores the first BTree.Node in this linked list.
      */
     private Node list;
 
@@ -94,8 +94,8 @@ public class ULLMap<K, V>  implements Map61B<K, V> {
         }
 
         /**
-         * Returns the Node in this linked list of key-value pairs whose key
-         * is equal to KEY, or null if no such Node exists.
+         * Returns the BTree.Node in this linked list of key-value pairs whose key
+         * is equal to KEY, or null if no such BTree.Node exists.
          */
         Node get(K k) {
             if (k != null && k.equals(key)) {
@@ -111,7 +111,7 @@ public class ULLMap<K, V>  implements Map61B<K, V> {
         K key;
         /** Stores the value of the key-value pair of this node in the list. */
         V val;
-        /** Stores the next Node in the linked list. */
+        /** Stores the next BTree.Node in the linked list. */
         Node next;
 
     }
