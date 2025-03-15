@@ -238,7 +238,7 @@ public class BSTMap<K extends Comparable<K>, V>  implements Map61B<K, V> {
     }
 
     /**
-     * replace the current node's key value set with the min node
+     * replace the current node's key value set with the min node.
      * **/
     private V replaceMinNode(Node currentNode) {
         Node minNode = findMin(currentNode.right);
